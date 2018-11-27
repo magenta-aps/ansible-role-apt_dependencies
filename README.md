@@ -25,7 +25,8 @@ Example Playbook
       roles:
          - apt_dependencies
       vars:
-         apt_dep_path: /vagrant/src/code/
+         apt_dep_path: /vagrant/os2webscanner/doc/
+         apt_dep_file: SYSTEM_DEPENDENCIES
 
 License
 -------
