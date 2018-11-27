@@ -24,6 +24,8 @@ Example Playbook
     - hosts: all
       roles:
          - apt_dependencies
+      vars:
+         apt_dep_path: /vagrant/src/code/
 
 License
 -------
