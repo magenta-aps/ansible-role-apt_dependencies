@@ -3,7 +3,7 @@
   - name: Install dependencies
     apt:
       debug:
-        var: item
+        name: item
       update_cache: yes
       state: present
       with_lines: cat "{{ apt_dep_path }}/{{ apt_dep_file }}"
