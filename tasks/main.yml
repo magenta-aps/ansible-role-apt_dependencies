@@ -7,4 +7,5 @@
       state: present
       vars:
         packages:
-        - cat "{{ apt_dep_path }}/{{ apt_dep_file }}"
+        - apache2
+        - python3-dev
