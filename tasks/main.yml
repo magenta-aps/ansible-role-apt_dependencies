@@ -2,10 +2,7 @@
 
   - name: Install dependencies
     apt:
-      name: "{{ packages }}"
+      name: "{{ item }}"
       update_cache: yes
       state: present
-      vars:
-        packages:
-        - apache2
-        - python3-dev
+      with_items: cat "{{ apt_dep_path }}/{{ apt_dep_file }}"
