@@ -5,4 +5,5 @@
       name: "{{ item }}"
       update_cache: yes
       state: present
-      with_items: cat "{{ apt_dep_path }}/{{ apt_dep_file }}"
+    with_items:
+      - cat "{{ apt_dep_path }}/{{ apt_dep_file }}"
