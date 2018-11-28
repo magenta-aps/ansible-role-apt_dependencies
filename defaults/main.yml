@@ -1,4 +1,4 @@
 ---
 user: vagrant
-apt_dep_path: "/home/{{ user }}/os2webscanner/doc/"
+apt_dep_path: "/{{ user }}/doc/"
 apt_dep_file: SYSTEM_DEPENDENCIES
